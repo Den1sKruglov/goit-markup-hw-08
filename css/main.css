@@ -540,7 +540,7 @@ img {
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: url(/images/hero2x.jpg);
     background-size: cover;
@@ -553,7 +553,7 @@ img {
   }
 }
 @media (min-width: 489px) and (min-device-pixel-ratio: 2), (min-width: 489px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 489px) and (min-resolution: 192dpi), (min-width: 489px) and (min-resolution: 2dppx) {
-  .box {
+  .hero {
     background-image: url(/images/hero-tablet2x.jpg);
     background-size: cover;
   }
@@ -565,7 +565,7 @@ img {
   }
 }
 @media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
-  .box {
+  .hero {
     background-image: url(/images/hero-desctop2x.jpg);
     background-size: cover;
   }

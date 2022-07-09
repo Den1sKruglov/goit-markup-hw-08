@@ -17,8 +17,10 @@
    }
 }
 
-
-@media (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
    .hero {
       background-image: url(/images/hero2x.jpg);
       background-size: cover;
@@ -35,7 +37,7 @@
    (-webkit-min-device-pixel-ratio: 2),
    (min-resolution: 192dpi),
    (min-resolution: 2dppx) {
-      .box {
+      .hero {
       background-image: url(/images/hero-tablet2x.jpg);
       background-size: cover;
       }
@@ -52,7 +54,7 @@
    (-webkit-min-device-pixel-ratio: 2),
    (min-resolution: 192dpi),
    (min-resolution: 2dppx) {
-      .box {
+      .hero {
       background-image: url(/images/hero-desctop2x.jpg);
       background-size: cover;
    }
