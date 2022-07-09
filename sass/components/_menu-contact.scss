@@ -1,0 +1,81 @@
+/*!---кнопка меню*/
+.menu-close {
+   width: 40px;
+   height: 40px;
+}
+
+
+
+.header__btn {
+   display: inline-flex;
+   margin: 0;
+   padding: 0;
+   border: none;
+   background-color: transparent;
+   
+
+   @media screen and (min-width: 768px) {
+      display: none;
+   }
+
+   @media screen and (min-width: 1200px) {
+      display: none;
+   }
+}
+
+
+.header__btn .header__icon-close {
+   display: none;
+}
+
+.header__btn.is-open .header__icon-close {
+   display: block;
+}
+
+.header__btn.is-open .header__icon-menu {
+   display: none;
+}
+
+
+.header__menu-svg {
+   fill: #212121;
+   z-index: 1000;
+   &:hover {
+      fill: #2196F3;
+   }
+}
+
+
+/*---выпадающее меню*/
+.header__menu {
+   display: none;
+
+   @media screen and (max-width: 480px) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 480px;
+      min-height: 100vh;
+
+         background: #FFFFFF;
+         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px   4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+
+      &.is-open {
+         display: block;
+      }
+   }
+
+   @media screen and (min-width: 768px) {
+      display: flex;
+   }
+
+   @media screen and (min-width: 1200px) {
+      display: flex;
+   }
+}
+
+
+
+
+
+
