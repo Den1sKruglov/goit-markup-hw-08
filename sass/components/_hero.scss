@@ -27,7 +27,7 @@
    }
 }
 
-@media (min-width: 489px) {
+@media (min-width: 480px) {
    .hero {
       background-image: url(/images/hero-tablet1x.jpg);
       background-size: cover;
@@ -49,17 +49,8 @@
       background-image: url(/images/hero-desctop1x.jpg);
       background-size: cover;
    }
+}
 
-@media (min-device-pixel-ratio: 2),
-   (-webkit-min-device-pixel-ratio: 2),
-   (min-resolution: 192dpi),
-   (min-resolution: 2dppx) {
-      .hero {
-      background-image: url(/images/hero-desctop2x.jpg);
-      background-size: cover;
-   }
-}
-}
 
 .hero__title {
    width: 360px;
